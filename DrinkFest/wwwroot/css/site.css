@@ -1,0 +1,92 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    max-height: 50%;
+    padding-top: 9px;
+}
+
+#cartButton{
+    margin-right: 8px;
+}
+
+nav{
+    padding: 0.5rem;
+}
+
+.loginForm{
+    margin: 10%;
+}
+
+.checkoutForm{
+    margin-top: 5%;
+}
+
+.orderForm{
+    margin-top: 5%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #2fa4e7; 
+
+}
+
+a.remove{
+    text-decoration: none;
+}
+
+a.remove:hover{
+    color: blue;
+}
+
+.center_div{
+    margin: 0 auto;
+}
+
+.marginTop{
+    margin-top: 5%;
+}
+
+.marginTop1{
+    margin-top: 2%
+}
+
+.formPullRightButton{
+    margin-right: 10px !important
+}
+
+.carousel img{
+    min-width: 100%
+}
+
+
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+}
+
+.card img{
+    height: 260px;
+}
+
