@@ -37,11 +37,12 @@ namespace DrinkFest.Controllers
             {
                 if(string.Equals("Alcoholic", _category, StringComparison.OrdinalIgnoreCase))
                 {
-                    drinks = _drinkRepository.Drinks.Where(p => p.Category.CategoryId.Equals(50));
+                    drinks = _drinkRepository.Drinks.Where(p => p.Category.CategoryName.Equals("Alcoholic")).OrderBy(x => x.Name);
                 }
                 else
                 {
-                    drinks = _drinkRepository.Drinks.Where(p => p.Category.CategoryId.Equals(51));
+                    drinks = _drinkRepository.Drinks.Where(p => p.Category.CategoryName.Equals("Non-alcoholic")).OrderBy(x => x.Name);
+
 
                 }
 

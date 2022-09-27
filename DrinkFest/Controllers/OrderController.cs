@@ -33,7 +33,7 @@ namespace DrinkFest.Controllers
 
             if(_shoppingCart.ShoppingCartItems.Count == 0)
             {
-                ModelState.AddModelError("", "Your card is empty, add some drinks first");
+                ModelState.AddModelError("", "Your cart is empty, add some drinks first");
             }
             if (ModelState.IsValid)
             {

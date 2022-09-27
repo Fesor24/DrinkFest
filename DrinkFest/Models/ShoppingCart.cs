@@ -17,7 +17,7 @@ namespace DrinkFest.Models
 
         public static ShoppingCart GetCart(IServiceProvider services)
         {
-            ISession session = services.GetRequiredService<IHttpContextAccessor>()?
+            ISession? session = services.GetRequiredService<IHttpContextAccessor>()?
                 .HttpContext.Session;
 
             var context = services.GetService<AppDbContext>();
